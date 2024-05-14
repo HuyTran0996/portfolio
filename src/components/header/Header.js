@@ -5,23 +5,23 @@ const Header = () => {
   return (
     <header className="header">
       <a href="#" className="logo">
-        Portfolio.
+        Huy Tran.
       </a>
 
       <nav className="navbar">
-        <a href="#" style="--i:1" className="active">
+        <a href="#" className="active" style={{ "--i": 1 }}>
           Home
         </a>
-        <a href="#" style="--i:2">
+        <a href="#" style={{ "--i": 2 }}>
           About
         </a>
-        <a href="#" style="--i:3">
+        <a href="#" style={{ "--i": 3 }}>
           Skills
         </a>
-        <a href="#" style="--i:4">
+        <a href="#" style={{ "--i": 4 }}>
           Portfolio
         </a>
-        <a href="#" style="--i:5">
+        <a href="#" style={{ "--i": 5 }}>
           Contact
         </a>
       </nav>
