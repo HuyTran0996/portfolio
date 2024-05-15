@@ -49,3 +49,30 @@
     opacity: 1;
   }
 }
+
+@keyframes rainbowColorChange {
+  0% {
+    color: aqua;
+  }
+  14.3% {
+    color: yellow;
+  }
+  28.6% {
+    color: green;
+  }
+  42.9% {
+    color: violet;
+  }
+  57.1% {
+    color: red;
+  }
+  71.4% {
+    color: fuchsia;
+  }
+  85.7% {
+    color: orange;
+  }
+  100% {
+    color: aqua;
+  }
+}
