@@ -127,11 +127,15 @@
       opacity: 0;
       animation: zoomIn 1s ease forwards;
       animation-delay: 2s;
+      border-radius: 10px;
     }
     @include sm {
       order: 1;
       scale: 0.7;
       margin-top: -40px;
+      img {
+        border-radius: 50%;
+      }
     }
   }
 }

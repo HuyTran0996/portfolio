@@ -33,8 +33,12 @@ const Home = () => {
             <FaGithub />
           </a>
         </div>
-        <a href="#" class="btn">
-          Download CV
+        <a
+          href="https://drive.google.com/file/d/1_wF9Xp1WnkIvPbNnwU5MMHCOOJpaJiia/view?usp=sharing"
+          target="_blank"
+          class="btn"
+        >
+          View My CV
         </a>
       </div>
 
