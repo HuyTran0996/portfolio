@@ -1,25 +1,13 @@
 @import "../../stylesStore/variables.scss";
-@import "../../stylesStore//breakpoints.scss";
+@import "../../stylesStore/breakpoints.scss";
 @import "../../stylesStore/keyframes.scss";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  background: $background1;
-  color: $lightgrey;
-}
 
 .header {
   // position: fixed;
   // top: 0;
   // left: 0;
   width: 100%;
-  padding: 20px 10%;
+  padding: 20px 30px;
   background: transparent;
   display: flex;
   justify-content: space-between;
@@ -36,21 +24,72 @@ body {
     animation: slideRight 1s ease forwards;
   }
 
-  .navbar a {
-    display: inline-block;
-    font-size: 18px;
-    color: $lightgrey;
-    text-decoration: none;
-    font-weight: 600;
-    margin-left: 35px;
+  .navbar-toggler-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 11;
     transition: 0.3s;
-    opacity: 0;
-    animation: slideTop 0.5s ease forwards;
-    animation-delay: calc(0.2s * var(--i));
+
+    @include xxl {
+      display: none;
+    }
+    @include xl {
+      display: block;
+    }
   }
 
-  .navbar a:hover,
-  .navbar a.active {
-    color: aqua;
+  .navbar {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+
+    .navbar-nav {
+      display: flex;
+      @include xl {
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 80px;
+        margin-right: 30px;
+      }
+    }
+    .nav-link {
+      display: inline-block;
+      font-size: 18px;
+      color: $lightgrey;
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 35px;
+      transition: 0.3s;
+      opacity: 0;
+      animation: slideTop 0.5s ease forwards;
+      animation-delay: calc(0.2s * var(--i));
+
+      &:hover {
+        color: aqua;
+      }
+
+      @include xl {
+        color: #fff;
+      }
+    }
+    .nav-link.active {
+      color: aqua;
+    }
+
+    &.show-navbar-collapse {
+      transform: translateX(0);
+    }
+
+    @include xl {
+      position: fixed;
+      z-index: 10;
+      right: 0;
+      top: 0;
+      height: 100%;
+      background-color: rgb(68, 67, 66);
+      transform: translateX(100%);
+      width: 180px;
+      // opacity: 0.8;
+    }
   }
 }

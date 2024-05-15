@@ -13,17 +13,23 @@ const Home = () => {
           And I'm a <span>Frontend Developer</span>
         </h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
-          accusamus impedit facilis magni temporibus nostrum quas, et velit,
-          tenetur earum aspernatur officiis vero modi ab tempora pariatur
-          laudantium quasi officia?
+          A fresh Front-end developer, eager to further expand my expertise in
+          this field.
         </p>
 
         <div className="social-media">
-          <a href="#" style={{ "--i": 7 }}>
+          <a
+            href="https://www.linkedin.com/in/huy-tran-ba2a61258/"
+            target="_blank"
+            style={{ "--i": 7 }}
+          >
             <FaLinkedin />
           </a>
-          <a href="#" style={{ "--i": 7 }}>
+          <a
+            href="https://github.com/HuyTran0996"
+            target="_blank"
+            style={{ "--i": 7 }}
+          >
             <FaGithub />
           </a>
         </div>
@@ -33,7 +39,8 @@ const Home = () => {
       </div>
 
       <div className="home-image">
-        <img src="https://diningandnightlife.com/wp-content/uploads/2019/10/Marco.jpg" />
+        {/* <img src="https://diningandnightlife.com/wp-content/uploads/2019/10/Marco.jpg" /> */}
+        <img src="./image/avatar.png" alt="avatar" />
       </div>
     </section>
   );

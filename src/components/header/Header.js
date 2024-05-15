@@ -1,29 +1,97 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import "./Header.scss";
 
 const Header = () => {
+  const location = useLocation();
+  const [page, setPage] = useState("");
+  const [toggleMenu, setToggleMenu] = useState(false);
+  const handleNavbar = (e) => {
+    e.preventDefault();
+    setToggleMenu(!toggleMenu);
+  };
+
+  useEffect(() => {
+    const setActiveClass = () => {
+      let currentPage = location.pathname;
+      if (currentPage === "/") {
+        setPage("home");
+      }
+      if (currentPage.includes("/about")) {
+        setPage("about");
+      }
+      if (currentPage.includes("/skills")) {
+        setPage("skills");
+      }
+      if (currentPage.includes("/portfolio")) {
+        setPage("portfolio");
+      }
+      if (currentPage.includes("/contact")) {
+        setPage("contact");
+      }
+    };
+    setActiveClass();
+  }, [location]);
+
   return (
     <header className="header">
       <a href="#" className="logo">
         Huy Tran.
       </a>
 
-      <nav className="navbar">
-        <a href="#" className="active" style={{ "--i": 1 }}>
-          Home
-        </a>
-        <a href="#" style={{ "--i": 2 }}>
-          About
-        </a>
-        <a href="#" style={{ "--i": 3 }}>
-          Skills
-        </a>
-        <a href="#" style={{ "--i": 4 }}>
-          Portfolio
-        </a>
-        <a href="#" style={{ "--i": 5 }}>
-          Contact
-        </a>
+      <button
+        type="button"
+        className="navbar-toggler-btn"
+        onClick={handleNavbar}
+      >
+        <HiOutlineMenuAlt3
+          size={35}
+          style={{
+            color: `${toggleMenu ? "#010101" : "#fff"}`,
+          }}
+        />
+      </button>
+
+      <nav className={toggleMenu ? "navbar show-navbar-collapse" : "navbar"}>
+        <ul className="navbar-nav">
+          <Link
+            to="/"
+            className={`${page === "home" ? "active" : ""} nav-link`}
+            style={{ "--i": 1 }}
+          >
+            Home
+          </Link>
+          <Link
+            to="about"
+            className={`${page === "about" ? "active" : ""} nav-link`}
+            style={{ "--i": 2 }}
+          >
+            About
+          </Link>
+          <Link
+            to="skills"
+            className={`${page === "skills" ? "active" : ""} nav-link`}
+            style={{ "--i": 3 }}
+          >
+            Skills
+          </Link>
+          <Link
+            to="portfolio"
+            className={`${page === "portfolio" ? "active" : ""} nav-link`}
+            style={{ "--i": 4 }}
+          >
+            Portfolio
+          </Link>
+          <Link
+            to="contact"
+            className={`${page === "contact" ? "active" : ""} nav-link`}
+            style={{ "--i": 5 }}
+          >
+            Contact
+          </Link>
+        </ul>
       </nav>
     </header>
   );
