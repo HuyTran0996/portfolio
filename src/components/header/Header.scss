@@ -1,6 +1,7 @@
 @import "../../stylesStore/variables.scss";
 @import "../../stylesStore/breakpoints.scss";
 @import "../../stylesStore/keyframes.scss";
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 .header {
   // position: fixed;
@@ -15,7 +16,8 @@
   z-index: 100;
 
   .logo {
-    font-size: 25px;
+    font-family: "Great Vibes", cursive, sans-serif;
+    font-size: 35px;
     color: $lightgrey;
     text-decoration: none;
     font-weight: 600;
