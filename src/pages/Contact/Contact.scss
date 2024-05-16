@@ -1,0 +1,36 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    input,
+    textarea {
+      margin: 10px 0;
+      padding: 5px 15px;
+      font-size: 16px;
+      background: transparent;
+      border: 2px solid aqua;
+      border-radius: 5px;
+      color: #fff;
+    }
+    textarea {
+      height: 300px;
+    }
+
+    button {
+      font-size: 25px;
+      background: aqua;
+      color: black;
+      padding: 5px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+      }
+    }
+  }
+}
