@@ -9,19 +9,19 @@
   align-items: center;
 
   .title {
-    font-size: 36px;
+    font-size: 46px;
     font-weight: bold;
     border-bottom: 2px solid #718096;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
-    animation-delay: 0.7s;
+    animation-delay: 0.3s;
   }
   .description {
     font-size: 20px;
     padding-top: 10px;
     opacity: 0;
     animation: slideRight 1s ease forwards;
-    animation-delay: 1s;
+    animation-delay: 0.8s;
   }
 
   .project-grid {
