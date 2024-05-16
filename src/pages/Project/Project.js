@@ -2,6 +2,7 @@ import React from "react";
 
 import buyit from "../../assets/portfolio/buyit.jpg";
 import themovie from "../../assets/portfolio/themovie.jpg";
+import portfolio from "../../assets/portfolio/portfolio.jpg";
 
 import "./Project.scss";
 
@@ -17,6 +18,14 @@ const Portfolio = () => {
     },
     {
       id: 2,
+      src: portfolio,
+      title: "My Page",
+      style: "white",
+      demo: "",
+      code: "https://github.com/HuyTran0996/portfolio",
+    },
+    {
+      id: 3,
       src: themovie,
       title: "The Movie",
       style: "white",

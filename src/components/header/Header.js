@@ -25,6 +25,9 @@ const Header = () => {
       if (currentPage.includes("/skills")) {
         setPage("skills");
       }
+      if (currentPage.includes("/certifications")) {
+        setPage("certifications");
+      }
       if (currentPage.includes("/projects")) {
         setPage("projects");
       }
@@ -78,16 +81,23 @@ const Header = () => {
             Skills
           </Link>
           <Link
+            to=" certifications"
+            className={`${page === " certifications" ? "active" : ""} nav-link`}
+            style={{ "--i": 4 }}
+          >
+            Certifications
+          </Link>
+          <Link
             to="projects"
             className={`${page === "projects" ? "active" : ""} nav-link`}
-            style={{ "--i": 4 }}
+            style={{ "--i": 5 }}
           >
             Projects
           </Link>
           <Link
             to="contact"
             className={`${page === "contact" ? "active" : ""} nav-link`}
-            style={{ "--i": 5 }}
+            style={{ "--i": 6 }}
           >
             Contact
           </Link>
