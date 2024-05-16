@@ -81,8 +81,8 @@ const Header = () => {
             Skills
           </Link>
           <Link
-            to=" certifications"
-            className={`${page === " certifications" ? "active" : ""} nav-link`}
+            to="certifications"
+            className={`${page === "certifications" ? "active" : ""} nav-link`}
             style={{ "--i": 4 }}
           >
             Certifications
