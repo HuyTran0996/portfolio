@@ -26,14 +26,8 @@
       font-size: 56px;
       font-weight: 700;
       animation: slideTop 1s ease forwards;
-      animation-delay: 0.7s;
       color: #fff;
 
-      &:nth-of-type(2) {
-        margin-bottom: 30px;
-        animation: slideBottom 1s ease forwards;
-        animation-delay: 0.7s;
-      }
       span {
         color: aqua;
       }
@@ -59,7 +53,7 @@
     }
 
     .list {
-      animation: zoomIn 1s ease forwards, rainbowColorChange 6s infinite;
+      animation: rainbowColorChange 6s infinite;
     }
 
     @include sm {
