@@ -2,16 +2,8 @@ import React from "react";
 
 import buyit from "../../assets/portfolio/buyit.jpg";
 import themovie from "../../assets/portfolio/themovie.jpg";
-import sass from "../../assets/sass.png";
-import javascript from "../../assets/javascript.png";
-import reactImage from "../../assets/react.png";
-import redux from "../../assets/redux.png";
-import expressjs from "../../assets/expressjs.png";
-import mongodb from "../../assets/mongodb.png";
 
-import github from "../../assets/github.png";
-
-// import "./Skill.scss";
+import "./Project.scss";
 
 const Portfolio = () => {
   const techs = [
@@ -19,7 +11,7 @@ const Portfolio = () => {
       id: 1,
       src: buyit,
       title: "Buy It",
-      style: "orange",
+      style: "white",
       demo: "https://marketplace-front-end-2024.netlify.app",
       code: "https://github.com/HuyTran0996/Marketplace",
     },
@@ -27,22 +19,22 @@ const Portfolio = () => {
       id: 2,
       src: themovie,
       title: "The Movie",
-      style: "blue",
+      style: "white",
       demo: "https://the-movie-2023-11-28.netlify.app",
       code: "https://github.com/HuyTran0996/The-Movie",
     },
   ];
   return (
-    <div className="portfolio">
-      <div className="content">
-        <h1 className="title">Portfolio</h1>
+    <div className="project">
+      <div className="project-content">
+        <h1 className="title">Projects</h1>
         <p className="description">These are my projects</p>
 
-        <div className="technologies-grid">
+        <div className="project-grid">
           {techs.map(({ id, src, title, style, demo, code }) => (
-            <div key={id} className={`technology-card ${style}`}>
-              <img src={src} alt="" className="technology-image" />
-              <p className="technology-title">{title}</p>
+            <div key={id} className={`project-card ${style}`}>
+              <img src={src} alt="" className="project-image" />
+              <p className="project-title">{title}</p>
               <div className="button">
                 <a href={demo} target="_blank" className="demo">
                   Demo
