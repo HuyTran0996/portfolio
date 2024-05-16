@@ -34,7 +34,7 @@ const Home = () => {
           </a>
         </div>
         <a
-          href="https://drive.google.com/file/d/1_wF9Xp1WnkIvPbNnwU5MMHCOOJpaJiia/view?usp=sharing"
+          href="https://drive.google.com/file/d/1SAXQt0C6qKAh4ClL543Xf2ehGISwI_lU/view?usp=sharing"
           target="_blank"
           class="btn"
         >
