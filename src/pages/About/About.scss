@@ -4,18 +4,18 @@
 
 .about {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 80vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 70px 10% 0;
+  overflow: hidden;
 
   @include sm {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 90px 10% 0;
     height: auto;
   }
 
@@ -48,7 +48,7 @@
         animation: slideLeft 1s ease forwards;
       }
       @include sm {
-        margin: 0px 0;
+        margin: 0px;
       }
     }
 
@@ -71,12 +71,13 @@
       border-radius: 10px;
     }
     @include sm {
-      order: 1;
-      scale: 0.7;
-      margin-top: -40px;
-      .img {
-        display: none;
-      }
+      // order: 1;
+      // scale: 0.7;
+      // margin-top: -40px;
+      display: none;
+      // .img {
+      //   display: none;
+      // }
     }
   }
 }

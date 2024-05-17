@@ -9,11 +9,19 @@
   align-items: center;
 
   .title {
+    position: relative;
     font-size: 46px;
     font-weight: bold;
     border-bottom: 2px solid #718096;
+
+    color: transparent;
+    -webkit-text-stroke: 0.5px #00abf0;
+    background-image: linear-gradient(#00abf0, #00abf0);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -500px 0;
     opacity: 0;
-    animation: slideBottom 1s ease forwards;
+    animation: slideBottom 1s ease forwards, animeText 3s linear infinite;
     animation-delay: 0.3s;
   }
   .description {
@@ -43,10 +51,6 @@
         0 4px 6px -2px rgba(0, 0, 0, 0.05);
       transition: 0.3s;
 
-      &:hover {
-        scale: 1.05;
-      }
-
       &.white {
         box-shadow: 5px 5px 5px white, -5px 5px 5px white, 5px -0.3px 5px white,
           -5px -0.3px 5px white;
@@ -66,36 +70,61 @@
       }
 
       .button {
+        position: relative;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        width: 345px;
+        height: 50px;
+        background-color: transparent;
+        margin-top: 20px;
 
-        .demo {
-          width: 50%;
-          text-align: center;
+        a {
+          position: relative;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 120px;
+          height: 90%;
+          background-color: #00abf0;
+          border: 2px solid #00abf0;
+          border-radius: 8px;
+          font-size: 19px;
+          color: #081b29;
           text-decoration: none;
-          padding: 20px 0;
-          transition: 0.3s;
-          border-radius: 10px;
-          color: aqua;
-          &:hover {
-            background: red;
-            color: #fff;
-            font-weight: bold;
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-index: 1;
+          overflow: hidden;
+          transition: 0.5s;
+
+          &:nth-child(2) {
+            background: transparent;
+            color: #00abf0;
+            &::before {
+              background-color: #00abf0;
+            }
+            &:hover {
+              color: #081b29;
+            }
           }
-        }
-        .code {
-          width: 50%;
-          text-align: center;
-          text-decoration: none;
-          padding: 20px 0;
-          transition: 0.3s;
-          border-radius: 10px;
-          color: aqua;
           &:hover {
-            background: blue;
-            color: #fff;
-            font-weight: bold;
+            color: #00abf0;
+            &::before {
+              width: 100%;
+            }
+          }
+
+          &::before {
+            content: "";
+            background: #081b29;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            z-index: -1;
+            transition: 0.5s;
           }
         }
       }
