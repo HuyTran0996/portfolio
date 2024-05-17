@@ -8,6 +8,7 @@ const Header = () => {
   const location = useLocation();
   const [page, setPage] = useState("");
   const [toggleMenu, setToggleMenu] = useState(false);
+
   const handleNavbar = (e) => {
     e.preventDefault();
     setToggleMenu(!toggleMenu);
@@ -57,7 +58,10 @@ const Header = () => {
         />
       </button>
 
-      <nav className={toggleMenu ? "navbar show-navbar-collapse" : "navbar"}>
+      <nav
+        onClick={handleNavbar}
+        className={toggleMenu ? "navbar show-navbar-collapse" : "navbar"}
+      >
         <ul className="navbar-nav">
           <Link
             to="/"
