@@ -14,6 +14,27 @@ const Header = () => {
     setToggleMenu(!toggleMenu);
   };
 
+  const handleClickOutside = (e) => {
+    if (
+      !e.target.closest(".navbar") &&
+      !e.target.closest(".navbar-toggler-btn")
+    ) {
+      setToggleMenu(false);
+    }
+  };
+
+  useEffect(() => {
+    if (toggleMenu) {
+      document.addEventListener("click", handleClickOutside);
+    } else {
+      document.removeEventListener("click", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [toggleMenu]);
+
   useEffect(() => {
     const setActiveClass = () => {
       let currentPage = location.pathname;
