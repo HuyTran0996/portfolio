@@ -5,7 +5,7 @@
 .about {
   position: relative;
   width: 100vw;
-  height: 80vh;
+  // height: 80vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,7 +63,8 @@
 
   .about-image {
     .img {
-      margin-right: 150px;
+      // margin-right: 150px;
+      margin-left: 10vw;
       max-width: 500px;
       opacity: 0;
       animation: zoomIn 1s ease forwards, rainbowColorChange 6s infinite;

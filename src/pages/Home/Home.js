@@ -43,7 +43,6 @@ const Home = () => {
       </div>
 
       <div className="home-image">
-        {/* <img src="https://diningandnightlife.com/wp-content/uploads/2019/10/Marco.jpg" /> */}
         <img src="./image/avatar.png" alt="avatar" />
       </div>
     </section>
