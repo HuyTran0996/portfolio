@@ -3,6 +3,8 @@ import React from "react";
 import "./Home.scss";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { SiZalo } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
 const Home = () => {
   return (
     <section className="home">
@@ -23,14 +25,28 @@ const Home = () => {
             target="_blank"
             style={{ "--i": 7 }}
           >
-            <FaLinkedin />
+            <FaLinkedin size={28} />
           </a>
           <a
             href="https://github.com/HuyTran0996"
             target="_blank"
             style={{ "--i": 7 }}
           >
-            <FaGithub />
+            <FaGithub size={28} />
+          </a>
+          <a
+            href="https://qr-talk.zdn.vn/4/858153287/4c5deaeb4da5a4fbfdb4.jpg"
+            target="_blank"
+            style={{ "--i": 8 }}
+          >
+            <SiZalo size={28} />
+          </a>
+          <a
+            href="mailto:tranviquanghuy@gmail.com"
+            target="_blank"
+            style={{ "--i": 9 }}
+          >
+            <MdEmail size={28} />
           </a>
         </div>
         <a
