@@ -29,7 +29,7 @@ const Contact = () => {
       });
 
       showToast(
-        "Thank you for providing your information. Please rest assured that I will get in touch with you shortly.",
+        "Thank you! I'll reach out to you via the email you provided shortly.",
         "success",
         6000
       );
@@ -38,7 +38,7 @@ const Contact = () => {
       setMessage("");
     } catch (error) {
       showToast(
-        "An error occurred, please try to send an email to tranviquanghuy@gmail.com. Sorry for this inconvenience.",
+        "Error occurred. Please email to tranviquanghuy@gmail.com. I apologize for the inconvenience.",
         "error",
         10000
       );
@@ -73,7 +73,7 @@ const Contact = () => {
           onChange={(e) => setMessage(e.target.value)}
         />
         <button type="submit" disabled={isSending}>
-          {isSending ? "Sending Message...Please Wait..." : "Send Message"}
+          {isSending ? "Sending..." : "Send Message"}
         </button>
       </form>
     </div>
