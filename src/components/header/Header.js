@@ -2,6 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
+
+import { FaHome } from "react-icons/fa";
+import { BiSolidUserDetail } from "react-icons/bi";
+import { GrTechnology } from "react-icons/gr";
+import { TbCertificate } from "react-icons/tb";
+import { IoRocket } from "react-icons/io5";
+import { MdConnectWithoutContact } from "react-icons/md";
+
 import "./Header.scss";
 
 const Header = () => {
@@ -90,6 +98,7 @@ const Header = () => {
             style={{ "--i": 1 }}
           >
             Home
+            <FaHome size={25} className="nav-link-icon" />
           </Link>
           <Link
             to="about"
@@ -97,13 +106,14 @@ const Header = () => {
             style={{ "--i": 2 }}
           >
             About
+            <BiSolidUserDetail size={25} className="nav-link-icon" />
           </Link>
           <Link
             to="skills"
             className={`${page === "skills" ? "active" : ""} nav-link`}
             style={{ "--i": 3 }}
           >
-            Skills
+            Skills <GrTechnology size={25} className="nav-link-icon" />
           </Link>
           <Link
             to="certifications"
@@ -111,6 +121,7 @@ const Header = () => {
             style={{ "--i": 4 }}
           >
             Certifications
+            <TbCertificate size={25} className="nav-link-icon" />
           </Link>
           <Link
             to="projects"
@@ -118,6 +129,7 @@ const Header = () => {
             style={{ "--i": 5 }}
           >
             Projects
+            <IoRocket size={25} className="nav-link-icon" />
           </Link>
           <Link
             to="contact"
@@ -125,6 +137,7 @@ const Header = () => {
             style={{ "--i": 6 }}
           >
             Contact
+            <MdConnectWithoutContact size={25} className="nav-link-icon" />
           </Link>
         </ul>
       </nav>
