@@ -74,7 +74,7 @@ const Header = () => {
         <HiOutlineMenuAlt3
           size={35}
           style={{
-            color: `${toggleMenu ? "#010101" : "#fff"}`,
+            color: `${toggleMenu ? "orange" : "#fff"}`,
           }}
         />
       </button>
