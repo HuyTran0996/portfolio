@@ -12,11 +12,13 @@ const Home = () => {
         <h3>Hello, I Am</h3>
         <h1>Huy Trần</h1>
         <h3>
-          And I'm a <span>Frontend Developer</span>
+          And I'm a <span>Front-end Developer</span>
         </h3>
+
         <p>
-          A fresh Front-end developer, eager to further expand my expertise in
-          this field.
+          Passionate about web-development, I blend creativity with technical
+          expertise to deliver outstanding results. Committed to staying current
+          with industry trends and continuously improving my skills.
         </p>
 
         <div className="social-media">
