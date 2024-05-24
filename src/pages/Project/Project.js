@@ -1,5 +1,6 @@
 import React from "react";
 
+import themovie2 from "../../assets/portfolio/themovie2.jpg";
 import buyit from "../../assets/portfolio/buyit.jpg";
 import themovie from "../../assets/portfolio/themovie.jpg";
 import portfolio from "../../assets/portfolio/portfolio.jpg";
@@ -10,6 +11,14 @@ const Portfolio = () => {
   const techs = [
     {
       id: 1,
+      src: themovie2,
+      title: "The Movie 2nd",
+      style: "white",
+      demo: "https://the-movie-2nd.netlify.app",
+      code: "https://github.com/HuyTran0996/The-Movie-Version-2",
+    },
+    {
+      id: 2,
       src: buyit,
       title: "Buy It",
       style: "white",
@@ -17,7 +26,7 @@ const Portfolio = () => {
       code: "https://github.com/HuyTran0996/Marketplace",
     },
     {
-      id: 2,
+      id: 3,
       src: portfolio,
       title: "My Page",
       style: "white",
@@ -25,7 +34,7 @@ const Portfolio = () => {
       code: "https://github.com/HuyTran0996/portfolio",
     },
     {
-      id: 3,
+      id: 4,
       src: themovie,
       title: "The Movie",
       style: "white",
