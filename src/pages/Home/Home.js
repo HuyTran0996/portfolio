@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiZalo } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
+import { FaDiscord } from "react-icons/fa";
 const Home = () => {
   return (
     <section className="home">
@@ -44,9 +45,16 @@ const Home = () => {
             <SiZalo size={28} />
           </a>
           <a
-            href="mailto:tranviquanghuy@gmail.com"
+            href="https://discord.com/users/huy_tran96"
             target="_blank"
             style={{ "--i": 9 }}
+          >
+            <FaDiscord size={28} />
+          </a>
+          <a
+            href="mailto:tranviquanghuy@gmail.com"
+            target="_blank"
+            style={{ "--i": 10 }}
           >
             <MdEmail size={28} />
           </a>
