@@ -1,6 +1,7 @@
 // Import React and your assets
 import React from "react";
 
+import javascript from "../../assets/certifications/javascript.jpg";
 import responsive from "../../assets/certifications/responsive.jpg";
 import coderschool from "../../assets/certifications/coderschool.jpg";
 import expressjs from "../../assets/certifications/expressjs.jpg";
@@ -17,34 +18,41 @@ const Skill = () => {
   const techs = [
     {
       id: 1,
-      src: responsive,
-      title: "Responsice Web Design",
+      src: javascript,
+      title: "JavaScript Algorithms and Data Structures ",
       style: "orange",
       logo: "freecodecamp",
     },
     {
       id: 2,
-      src: coderschool,
-      title: "Full Stack Web Development",
+      src: responsive,
+      title: "Responsice Web Design",
       style: "blue",
-      logo: "coderschool",
+      logo: "freecodecamp",
     },
     {
       id: 3,
+      src: coderschool,
+      title: "Full Stack Web Development",
+      style: "red",
+      logo: "coderschool",
+    },
+    {
+      id: 4,
       src: expressjs,
       title: "Nodejs, Express, MongoDB",
       style: "green",
       logo: "udemy",
     },
     {
-      id: 4,
+      id: 5,
       src: react,
       title: "Mordern React With Redux",
       style: "sky",
       logo: "udemy",
     },
     {
-      id: 5,
+      id: 6,
       src: mongodb,
       title: "Introduction to MongoDB",
       style: "yellow",
