@@ -1,4 +1,3 @@
-// Import React and your assets
 import React from "react";
 
 import javascript from "../../assets/certifications/javascript.jpg";
@@ -22,6 +21,7 @@ const Skill = () => {
       title: "JavaScript Algorithms and Data Structures ",
       style: "orange",
       logo: "freecodecamp",
+      link: "https://freecodecamp.org/certification/fcc9fbcafd3-f9ae-4367-a1c2-21475684cfe8/javascript-algorithms-and-data-structures-v8",
     },
     {
       id: 2,
@@ -29,6 +29,7 @@ const Skill = () => {
       title: "Responsice Web Design",
       style: "blue",
       logo: "freecodecamp",
+      link: "https://freecodecamp.org/certification/fcc9fbcafd3-f9ae-4367-a1c2-21475684cfe8/responsive-web-design",
     },
     {
       id: 3,
@@ -36,6 +37,7 @@ const Skill = () => {
       title: "Full Stack Web Development",
       style: "red",
       logo: "coderschool",
+      link: "https://mycourse.app/4XJS7qUush3YVNbp8",
     },
     {
       id: 4,
@@ -43,6 +45,7 @@ const Skill = () => {
       title: "Nodejs, Express, MongoDB",
       style: "green",
       logo: "udemy",
+      link: "https://udemy-certificate.s3.amazonaws.com/image/UC-bbc736c0-5970-4e7a-a576-40ad253a090f.jpg",
     },
     {
       id: 5,
@@ -50,6 +53,7 @@ const Skill = () => {
       title: "Mordern React With Redux",
       style: "sky",
       logo: "udemy",
+      link: "https://udemy-certificate.s3.amazonaws.com/image/UC-2473f566-5d87-4c63-a1f9-238a3c082dc4.jpg",
     },
     {
       id: 6,
@@ -57,6 +61,7 @@ const Skill = () => {
       title: "Introduction to MongoDB",
       style: "yellow",
       logo: "mongodb",
+      link: "https://learn.mongodb.com/c/z-0-wTviRomFtHzm_w34jw",
     },
   ];
 
@@ -67,9 +72,16 @@ const Skill = () => {
         <p className="description">To preserve the memories of my efforts</p>
 
         <div className="certification-grid">
-          {techs.map(({ id, src, title, style, logo }) => {
+          {techs.map(({ id, src, title, style, logo, link }) => {
             return (
-              <div key={id} className={`certification-card ${style}`}>
+              <a
+                key={id}
+                className={`certification-card ${style}`}
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none", color: "#fff" }}
+              >
                 <img src={src} alt="" className="certification-image" />
                 <div className="title-logo">
                   <div className="logo">
@@ -87,7 +99,7 @@ const Skill = () => {
                   </div>
                   <p className="certification-title">{title}</p>
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>
