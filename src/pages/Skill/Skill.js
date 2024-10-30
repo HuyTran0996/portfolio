@@ -9,8 +9,8 @@ import reactImage from "../../assets/react.png";
 import redux from "../../assets/redux.png";
 import expressjs from "../../assets/expressjs.png";
 import mongodb from "../../assets/mongodb.png";
-
 import github from "../../assets/github.png";
+import mui from "../../assets/mui.png";
 
 import "./Skill.scss";
 
@@ -48,24 +48,30 @@ const Skill = () => {
     },
     {
       id: 6,
+      src: mui,
+      title: "Material UI",
+      style: "blue",
+    },
+    {
+      id: 7,
       src: redux,
       title: "Redux",
       style: "violet",
     },
     {
-      id: 7,
+      id: 8,
       src: expressjs,
       title: "Express JS",
       style: "white",
     },
     {
-      id: 8,
+      id: 9,
       src: mongodb,
       title: "Mongo DB",
       style: "greenyellow",
     },
     {
-      id: 9,
+      id: 10,
       src: github,
       title: "GitHub",
       style: "gray",
