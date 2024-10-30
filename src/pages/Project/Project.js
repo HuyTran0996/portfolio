@@ -48,7 +48,7 @@ const Portfolio = () => {
       src: portfolio,
       title: "My Page",
       style: "white",
-      demo: "",
+      demo: "https://huytran-dev.netlify.app/projects",
       code: "https://github.com/HuyTran0996/portfolio",
     },
     {
